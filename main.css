@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* font-family: "Alice", serif;
+font-family: "Inter", sans-serif; */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+p {
+  font-family: "Alice", serif;
+}
+h1 {
+  font-size: 38px;
+}
+a {
+  font-family: "Inter", sans-serif;
+}
+
+.nav {
+  background-color: #e1dcc9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.Logo-link {
+  margin: 0 2rem;
+}
+
+.Logo-link > img {
+  width: 70x;
+  height: 70px;
+}
+
+.nav-links > a {
+  margin: 0 2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.home-wrapper {
+}
+
+.home-header {
+  /* margin: 0 2rem; */
+  padding: 4rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e1dcc9;
+  flex-wrap: wrap;
+}
+
+.heading-content-home > h1 > span {
+  color: #c24229;
+}
+.heading-content-home {
+}
+.heading-content-home > p {
+  font-size: 20px;
+  padding-bottom: 3rem;
+  max-width: 80%;
+}
+
+.profilepicture {
+  height: 368px;
+  width: 368px;
+  border-radius: 100%;
+}
+
+.button {
+  background-color: #17395c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 170px;
+}
+
+.parksmart {
+  padding: 4rem 4rem;
+  padding-left: 16rem;
+}
