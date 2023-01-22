@@ -8,88 +8,373 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-h1,
-p {
-  font-family: "Alice", serif;
-}
+
 h1 {
   font-size: 38px;
 }
 a {
   font-family: "Inter", sans-serif;
+  text-decoration: none;
 }
 
+/* header */
 .nav {
   background-color: #e1dcc9;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px;
-}
-
-.Logo-link {
-  margin: 0 2rem;
+  padding: 1rem 6rem 0 6rem;
 }
 
 .Logo-link > img {
-  width: 70x;
+  width: 70px;
   height: 70px;
 }
 
 .nav-links > a {
+  align-self: flex-end;
   margin: 0 2rem;
-  text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 20px;
 }
 
-.home-wrapper {
+.material-symbols-outlined {
+  visibility: hidden;
 }
-
 .home-header {
-  /* margin: 0 2rem; */
-  padding: 4rem 4rem;
+  padding: 0 6rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: #e1dcc9;
   flex-wrap: wrap;
 }
-
-.heading-content-home > h1 > span {
-  color: #c24229;
-}
 .heading-content-home {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* height: 100%; */
+  font-family: "Alice", serif;
 }
-.heading-content-home > p {
-  font-size: 20px;
-  padding-bottom: 3rem;
-  max-width: 80%;
+.heading-content-home > h1 {
+  font-size: 64px;
+  font-weight: 500;
+  margin: 0;
+}
+.heading-content-home > h2 {
+  color: #d2543b;
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 2rem 0;
 }
 
-.profilepicture {
-  height: 368px;
-  width: 368px;
+.heading-content-home > p {
+  margin: 0;
+  font-size: 24px;
+}
+
+.home-ilussion-img {
+  transform: translate(0, -5%);
+  max-height: 50%;
+  max-width: 50%;
+}
+
+.lets-chat-button {
+  background-color: #17395c;
+  /* border: none; */
+  color: white;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  align-self: flex-start;
+  margin: 4rem 0 0 0;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* home main */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 9rem;
+}
+.card-container > h3 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: medium;
+  margin: 2rem 0 0 0;
+  font-size: 24px;
+  color: #2d2d2d;
+}
+
+.flixgreen-card,
+.parksmart-card,
+.my-asthma-card {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding-top: 8rem;
+}
+.my-asthma-card {
+  padding-bottom: 8rem;
+}
+
+.flixgreen-card-text,
+.my-asthma-card-text,
+.parksmart-card-text {
+  font-family: "Inter", sans-serif;
+  border-radius: 5px;
+  max-width: 30%;
+  padding: 1rem 2rem;
+}
+.flixgreen-card-text,
+.my-asthma-card-text {
+  transform: translate(-10%, 15%);
+}
+.parksmart-card-text {
+  transform: translate(10%, 15%);
+}
+
+.flixgreen-card-text > h3,
+.my-asthma-card-text > h3,
+.parksmart-card-text > h3 {
+  text-decoration: underline;
+  margin: 1rem 0 0 0;
+  padding: 0;
+  font-size: x-large;
+  font-weight: 900;
+}
+.flixgreen-card-text > .flix-card-description,
+.my-asthma-card-text > .my-asthma-card-description,
+.parksmart-card-text > .parksmart-card-description {
+  padding: 1rem 0;
+}
+.flixgreen-card-text > .card-project,
+.my-asthma-card-text > .card-project,
+.parksmart-card-text > .card-project {
+  margin: 0;
+  padding: 0;
+}
+
+.flixgreen-card-text {
+  color: white;
+  background-color: #17395c;
+  transition: ease-in 0.2s;
+}
+.flixgreen-card-text:hover,
+.parksmart-card-text:hover,
+.my-asthma-card-text:hover {
+  opacity: 0.9;
+  transition: ease-in 0.2s;
+}
+.parksmart-card-text {
+  background-color: #efb758;
+  color: black;
+  transition: ease-in 0.2s;
+}
+.my-asthma-card-text {
+  background-color: #ff6749;
+  color: black;
+  transition: ease-in 0.2s;
+}
+
+/* about start  */
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 10rem;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.about-wrapper > h1 {
+  font-size: 32px;
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.about-wrapper > h1 > span {
+  color: #d2543b;
+}
+
+.about-wrapper > h2 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.about-button {
+  background-color: rgb(23, 57, 92);
+  border: none;
+  color: white;
+  padding: 11px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 2rem 0px 0px;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+}
+
+.about-profilepicture {
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 100%;
 }
 
-.button {
-  background-color: #17395c;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  /* display: inline-block; */
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 15px;
-  width: 170px;
+/*Footer Start*/
+.footer {
+  background-color: #e1dcc9;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  height: 10rem;
 }
 
-.parksmart {
-  padding: 4rem 4rem;
-  padding-left: 16rem;
+.footer-links > p {
+  padding: 1rem;
+}
+.footer-copyright {
+  display: flex;
+  align-items: flex-end;
+}
+.footer-copyright > p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.nav-footer {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+}
+.nav-footer > a {
+  padding: 0 1rem;
+}
+.nav-footer > a,
+.linkedin-footer,
+.email-footer {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer-links {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+.linkedin-footer,
+.email-footer {
+  display: flex;
+}
+.linkedin-footer > p,
+.email-footer > p {
+  color: #2d2d2d;
+  padding: 0 1rem;
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.linkedin-footer {
+  transform: translate(0, 40px);
+}
+
+@media screen and (max-width: 1250px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .my-asthma-card > img,
+  .parksmart-card > img,
+  .flixgreen-card > img {
+    width: 90%;
+    height: 90%;
+  }
+  .home-header {
+    justify-content: center;
+  }
+  .lets-chat-button {
+    align-self: center;
+  }
+
+  .heading-content-home > h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .heading-content-home > p {
+    text-align: center;
+  }
+
+  .heading-content-home {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .my-asthma-card,
+  .flixgreen-card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .my-asthma-card-text,
+  .parksmart-card-text,
+  .flixgreen-card-text {
+    min-width: 250px;
+    transform: translate(0, -20%);
+  }
+  .parksmart-card {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 860px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-links > a {
+    padding: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body,
+  html {
+    max-width: 100%;
+  }
+  .footer {
+    width: calc(100% - 4rem);
+    padding: 2rem;
+  }
+  .nav-footer {
+    display: none;
+  }
+  .home-header {
+    padding: 0;
+  }
+  .heading-content-home {
+    width: 80%;
+  }
+  .home-ilussion-img {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-wrapper {
+    padding: 3rem 2rem;
+  }
 }
