@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="My portfolio About page, it has information about Author:Angelica Persson, download option." />
+      content="My portfolio About page, it has information about Author:Angelica Persson, download option."
+    />
     <!-- here do i load my main.css file -->
     <link rel="stylesheet" href="main.css" />
+    <script src="index.js" defer></script>
     <title>About</title>
   </head>
   <body>
     <!-- Navbar 
     contains logo in the img tag, it also has 4 links to different html pages such as : HOME, PROJECT, ABOUT and CONTACT. -->
     <nav class="nav">
-      <div class="nav-title">
-        <a class="Logo-link" href="index.html">
-          <img src="./assets/logo.png" alt="Logo"
-        /></a>
-      </div>
+      <a class="Logo-link" href="index.html">
+        <img src="./assets/logo.png" alt="Logo"
+      /></a>
+      <img
+        src="/assets/hamburgermenu.svg"
+        class="toggle-menu__mobile"
+        alt="menu"
+      />
       <div class="nav-links">
         <a href="index.html"> HOME </a>
         <a href="project.html"> PROJECT </a>
         <a href="about.html"> ABOUT </a>
-        <a href="contact.html"> CONTACT</a>
       </div>
     </nav>
+
     <!-- Main content in about -->
     <main class="about-wrapper">
       <!-- This is my About containt and it contains information about me.
@@ -35,7 +40,8 @@
       <img
         class="about-profilepicture"
         src="./assets/profilbilden.jpg"
-        alt="profilepicture" />
+        alt="profilepicture"
+      />
       <h1>My name is <span> Angelica Persson</span></h1>
       <h2>I'm a bit of a perfectionist with a problem solving mind.</h2>
       <div>

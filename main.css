@@ -4,9 +4,22 @@
 font-family: "Inter", sans-serif; */
 
 body {
+  max-width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.dark-mode{
+  background-color: black !important;
+}
+.light-mode{
+  color: black !important;
+  background-color: white !important;
+}
+.gray{
+  background-color: rgb(211, 211, 211) !important;
 }
 
 h1 {
@@ -18,6 +31,10 @@ a {
 }
 
 /* header */
+.toggle-menu__mobile{
+  display: none;
+}
+
 .nav {
   background-color: #e1dcc9;
   display: flex;
@@ -39,9 +56,7 @@ a {
   font-size: 20px;
 }
 
-.material-symbols-outlined {
-  visibility: hidden;
-}
+
 .home-header {
   padding: 0 6rem;
   display: flex;
@@ -54,7 +69,6 @@ a {
   display: flex;
   flex-direction: column;
   width: 50%;
-  /* height: 100%; */
   font-family: "Alice", serif;
 }
 .heading-content-home > h1 {
@@ -229,6 +243,72 @@ a {
   max-height: 300px;
   border-radius: 100%;
 }
+/* Project Page */
+.project-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.figure__projects{
+  max-width: 70%;
+  border-radius: 5px;
+  background-color: #173a5c2c;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.figure__projects > a > img{
+  max-width:100%;
+}
+.figure__projects > p{
+  max-width: 70%;
+}
+.figure__projects > h2 {
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+}
+/* Under pages */
+.underpage-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.underpage__back-to-home{
+  margin: 2rem 0 0 2rem;
+  color: #ffffff;
+  font-size: 20px;
+}
+.figure__underpage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.figure__underpage > img{
+  max-width: 95%;
+
+}
+.figure__underpage:last-of-type{
+  padding-bottom:4rem;
+
+}
+.underpage-wrapper >h1{
+  margin-top: 3rem ;
+}
+.underpage-wrapper >h2{
+  max-width: 90%;
+}
+.underpage-wrapper >h1, .underpage-wrapper >h2{
+  font-family: "Inter", sans-serif;
+}
+.figure__underpage >p{
+  margin-top: 2rem;
+  max-width: 80%;
+  font-family: "Inter", sans-serif;
+}
 
 /*Footer Start*/
 .footer {
@@ -256,6 +336,9 @@ a {
   display: flex;
   align-items: flex-end;
 }
+
+
+
 .nav-footer > a {
   padding: 0 1rem;
 }
@@ -322,6 +405,8 @@ a {
     flex-direction: column;
     align-items: center;
   }
+
+  
 }
 
 @media screen and (max-width: 1000px) {
@@ -342,13 +427,41 @@ a {
   }
 }
 @media screen and (max-width: 860px) {
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-  }
+    
   .nav-links > a {
+
     padding: 0.5rem 0;
   }
+  .toggle-menu__mobile{
+    display: block;
+    position: relative;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:80px;
+    right: 0;
+    background: rgb(190, 190, 190);
+    height: 100vh;
+    width: 60%;
+    transform: translateX(400px);
+    overflow-x:hidden;
+    transition: .2s linear;
+    border-radius: 10px 0 0 10px;
+    padding: 1rem;
+    z-index: 2;
+  }
+  .isOpen{
+    overflow-x:hidden;
+    display: hidden;
+    transition: .2s linear;
+    transform:translateX(0);
+  }
+    .nav{
+      padding: 1rem 2rem 0 2rem;
+
+    }
 }
 
 @media screen and (max-width: 850px) {

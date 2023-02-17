@@ -6,32 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="This page dosnt have anything at moment." />
+      content="This page dosnt have anything at moment."
+    />
     <!-- here do i load my main.css file -->
     <link rel="stylesheet" href="main.css" />
+    <script src="index.js" defer></script>
     <title>Project</title>
   </head>
   <body>
     <!-- Navbar 
     contains logo in the img tag, it also has 4 links to different html pages such as : HOME, PROJECT, ABOUT and CONTACT. -->
     <nav class="nav">
-      <div class="nav-title">
-        <a class="Logo-link" href="index.html">
-          <img src="./assets/logo.png" alt="Logo"
-        /></a>
-      </div>
+      <a class="Logo-link" href="index.html">
+        <img src="./assets/logo.png" alt="Logo"
+      /></a>
+      <img
+        src="/assets/hamburgermenu.svg"
+        class="toggle-menu__mobile"
+        alt="menu"
+      />
       <div class="nav-links">
         <a href="index.html"> HOME </a>
         <a href="project.html"> PROJECT </a>
         <a href="about.html"> ABOUT </a>
-        <a href="contact.html"> CONTACT</a>
       </div>
     </nav>
     <!-- This page is for future improvents, this side will list all diffent projects, with more information about each project.
     It will also have a singlepage for each project for more images and more detailed information about each project, such as low-fi and high-fi,
     the color choice.-->
 
-    <main></main>
+    <main class="project-wrapper">
+      <figure class="figure__projects">
+        <a href="/htmlUnderSidor/flixgreendesktop.html">
+          <img src="/assets/flixgreen.png" alt="Flixtrain" />
+        </a>
+        <h2>Flixtrain Desktop</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nemo
+          repudiandae quae eos voluptas sapiente soluta inventore fugit nostrum
+          delectus hic vel, reiciendis consectetur quas libero provident eum a
+          veritatis.
+        </p>
+      </figure>
+      <figure class="figure__projects">
+        <a href="/htmlUnderSidor/flixgreenmobile.html">
+          <img src="/assets/flixgreenmobil.png" alt="Flixtrain" />
+        </a>
+        <h2>Flixgreen Mobile</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quod
+          mollitia aliquid odit accusantium, facilis pariatur incidunt iusto qui
+          consequatur, natus velit impedit alias culpa harum accusamus, quas
+          placeat quia! Voluptatibus error quibusdam enim inventore animi eaque
+          officiis laborum velit mollitia vel facilis vitae, dicta ab eveniet
+          ipsum modi amet libero officia rerum placeat sequi sit voluptates
+          itaque! Iste, minus.
+        </p>
+      </figure>
+      <figure class="figure__projects">
+        <a href="/htmlUnderSidor/myasthma.html">
+          <img src="/assets/my-asthma.png" alt="My Asthma" />
+        </a>
+        <h2>My Asthma</h2>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+          perferendis eos assumenda ipsum deleniti, suscipit corporis alias
+          quidem dignissimos ullam quisquam rerum consequatur, error facilis
+          repudiandae velit? Mollitia, explicabo laborum. Quaerat, nobis sed
+          placeat sapiente sit voluptates doloremque omnis deleniti magni
+          voluptatem est dolorum aliquam qui ea totam repudiandae voluptatibus
+          similique cupiditate quo eius dolores cumque sequi commodi ut! Culpa.
+        </p>
+      </figure>
+      <figure class="figure__projects">
+        <a href="/htmlUnderSidor/parksmart.html">
+          <img src="/assets/parksmart.png" alt="Park Smart" />
+        </a>
+        <h2>Park Smart</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quod
+          mollitia aliquid odit accusantium, facilis pariatur incidunt iusto qui
+          consequatur, natus velit impedit alias culpa harum accusamus, quas
+          placeat quia! Voluptatibus error quibusdam enim inventore animi eaque
+          officiis laborum velit mollitia vel facilis vitae, dicta ab eveniet
+          ipsum modi amet libero officia rerum placeat sequi sit voluptates
+          itaque! Iste, minus.
+        </p>
+      </figure>
+    </main>
 
     <!-- footer 
     the footer includes a copyright, links to the different html pages and clickable icons which leads to different url links.-->
