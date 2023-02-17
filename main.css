@@ -435,6 +435,7 @@ a {
   .toggle-menu__mobile{
     display: block;
     position: relative;
+    cursor: pointer;
   }
   .nav-links{
     display: flex;
